@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 以 CoordinatorLayout 为根布局 && fitsSystemWindows="true" -->
+    <!-- 否则在此页面侧滑菜单不能沉浸式 -->
+    <!-- 侧滑菜单禁用时可忽略 -->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!-- 以 CollapsingToolbarLayout 为子布局 -->
+        <!-- 否则在此页面侧滑菜单沉浸部分有深黑色遮盖 -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
